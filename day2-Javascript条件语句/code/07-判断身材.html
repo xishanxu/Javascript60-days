@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<label for="">身高：<input type="text" id="height"></label>
+		<label for="">体重：<input type="text" id="weight"></label>
+		<button onclick="calc()">计算</button>
+		<script>
+			//开发一款软件，根据公式（身高-108）*2=体重，
+			//可以有10斤左右的浮动。来观察测试者体重是否合适
+			
+			function calc(){
+				var height = Number(document.getElementById("height").value);
+				var weight = Number(document.getElementById("weight").value);
+				
+				//通过自己的身高计算标准体重
+				var bWeight = (height - 108) * 2;
+				//标准体重跟自己的体重比较
+				//计算自身体重和标准体重之差
+				var distance = weight - bWeight;
+				if(distance >= -10 && distance <= 10){
+					alert("魔鬼身材");
+				}else if(distance < -10){
+					alert("多吃点，太瘦了");
+				}else{
+					alert("死胖子，别吃了");
+				}
+			}
+			
+		</script>
+	</body>
+</html>

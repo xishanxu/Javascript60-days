@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		
+	</head>
+	<body>
+		<input type="text" id="num1">
+		<select id="sel">
+			<option>+</option>
+			<option>-</option>
+			<option>*</option>
+			<option>/</option>
+		</select>
+		<input type="text" id="num2">
+		<button onclick="calc()">计算</button>
+		<!-- <button onclick="add()">+计算</button>
+		<button onclick="minus()">-计算</button>
+		<button onclick="muti()">*计算</button>
+		<button onclick="chu()">/计算</button> -->
+		<script>
+			//input元素,需要在元素渲染之后获取
+			var input1 = document.getElementById("num1");
+			var input2 = document.getElementById("num2");
+			
+			var sel = document.getElementById("sel");
+			
+			//做一个简易的计算器
+			function calc(){
+				//文本框的值,需要在点击的时候获取
+				var num1 = Number(input1.value);
+				var num2 = Number(input2.value);
+				var opera = sel.value;
+				
+				//eval()  可以把字符串当作代码来执行
+				var str = num1+opera+num2;
+				console.log(str);
+				
+				console.log(eval(str));
+				
+			}
+		</script>
+	</body>
+</html>

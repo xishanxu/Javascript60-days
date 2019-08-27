@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="month">
+		<button onclick="calc()">天数</button>
+		<script>
+			//2月的润平年天数完善
+			var input = document.getElementById("month");
+			function calc(){
+				var month = Number(input.value);
+				var day = 1;
+				switch(month){
+					case 12: day += 30; //11月
+					case 11: day += 31; //10月
+					case 10: day += 30;
+					case 9 : day += 31;
+					case 8 : day += 31;
+					case 7 : day += 30;
+					case 6 : day += 31;
+					case 5 : day += 30;
+					case 4 : day += 31;
+					case 3 : day += 28; //判断闰年
+					case 2 : day += 31;
+					case 1 : day += 0;
+						break;
+					default: day = 0;
+						
+				}
+				
+				if(day == 0){
+					alert("请输入1-12");
+				}else{
+					alert(month+"月的1号是这一年的第"+day+"天");
+				}
+			}
+		</script>
+	</body>
+</html>

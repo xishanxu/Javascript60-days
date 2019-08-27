@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<input type="text" id="score">
+		<button onclick="panduan()">判断</button>
+	</head>
+	<body>
+		<script>
+			//输入分数，判定成绩等级(优良中差)
+			var input = document.getElementById("score");
+			function panduan(){
+				var score = Number(input.value);
+				//if嵌套
+				if(score >=0 && score <= 100){
+					if(score >= 90){
+						alert("优");
+					}else if(score >= 75){
+						alert("良");
+					}else if(score >= 60){
+						alert("中");
+					}else{
+						alert("差");
+					}
+				}
+				
+			}
+		</script>
+	</body>
+</html>

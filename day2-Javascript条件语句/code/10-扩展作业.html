@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="year">
+		<button onclick="panduan()">判断</button>
+		<script>
+			//输入年份，计算某一年是否是闰年
+			var input = document.getElementById("year");
+			function panduan(){
+				var year = Number(input.value);
+				if(year%4 == 0 && year%100 != 0 || year%400 == 0){
+					alert(year+"年是闰年");
+				}else{
+					alert(year+"年不是闰年");
+				}
+			}
+		</script>
+	</body>
+</html>

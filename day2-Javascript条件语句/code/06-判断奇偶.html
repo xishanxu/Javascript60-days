@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="num">
+		<button onclick="odd()">判断</button>
+		<script>
+			//判断一个整数是偶数还是奇数，并输出判断结果
+			//odd even
+			
+			function odd(){
+				var num = Number(document.getElementById("num").value);
+				/* if(num%2 == 0){
+					alert("even");
+				}else{
+					alert("odd");
+				} */
+				
+				if(num%2){ //1
+					alert("odd");
+				}else{
+					alert("even");
+				}
+			} 
+			 
+		</script>
+	</body>
+</html>
