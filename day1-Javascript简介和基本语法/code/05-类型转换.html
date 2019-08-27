@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			console.log(0.1+0.7);
+			console.log(0.2+0.6);
+			
+			console.log(parseInt(23.954354));
+			console.log(parseInt("23.5423"));
+			console.log(parseInt("2ss3.5dd423"));
+			console.log(parseInt("ss23.5dd423")); //NaN  not a number
+			console.log(typeof NaN);
+			//从左往右取整,遇到其他字符或者小数点结束
+			
+			console.log(parseFloat("23.5423"));
+			console.log(parseFloat("23.54.23"));
+			console.log(parseFloat("23.&54.23"));
+			//从左往右取浮点数,遇到其他字符或者第二个小数点结束
+			
+			console.log(Number("23"));
+			console.log(Number("23.45"));
+			console.log(Number("23.45ee")); //NaN
+			
+			var num = 23.32756534243;
+			console.log(num.toFixed(2));
+		</script>
+	</body>
+</html>

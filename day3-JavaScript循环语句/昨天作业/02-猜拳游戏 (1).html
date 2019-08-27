@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="num">
+		<button onclick="fn()">出拳</button>
+		<script>
+			//假设： 1代表石头 2代表剪刀 3代表 布
+			//（parseInt (Math.random()*3) + 1）
+			var input = document.getElementById("num");
+			
+			function fn(){
+				var num = Number(input.value);
+				var cNum = parseInt(Math.random()*3) + 1;
+				console.log(cNum);
+				switch(num){
+					case 1:
+						switch(cNum){
+							case 1:
+								alert("equal");
+								break;
+							case 2:
+								alert("win");
+								break;
+							case 3:
+								alert("lose");
+								break;
+						}
+						break;
+					case 2:
+						switch(cNum){
+							case 1:
+								alert("lose");
+								break;
+							case 2:
+								alert("equal");
+								break;
+							case 3:
+								alert("win");
+								break;
+						}
+						break;
+					case 3:
+						switch(cNum){
+							case 1:
+								alert("win");
+								break;
+							case 2:
+								alert("lose");
+								break;
+							case 3:
+								alert("eqaul");
+								break;
+						}
+						break;
+					default:
+						alert("请输入1-3，1代表石头 2代表剪刀 3代表 布");
+				}
+			}
+		</script>
+	</body>
+</html>

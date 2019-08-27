@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="num">
+		<button onclick="fn()">打印</button>
+		<script>
+			var input = document.getElementById("num");
+			function fn(){
+				var num = Number(input.value);
+				//寻找num的所有因数
+				var n = 1;
+				//循环
+				while(n <= num){
+					//判断能否整除
+					if(num%n === 0){
+						console.log(n);
+					}
+					n++;
+				}
+			}
+		</script>
+	</body>
+</html>

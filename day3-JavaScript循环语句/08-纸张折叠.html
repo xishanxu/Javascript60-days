@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//一张纸的厚度是0.0001米，将纸对折，对折多少次厚度超过珠峰高度8848米
+			var start = 0.0001, end = 8848;
+			//计数器,记录循环的次数
+			var n = 0;
+			while(start < end){
+				start *= 2;
+				n++;
+			}
+			//start>=end
+			console.log(n);
+		</script>
+	</body>
+</html>

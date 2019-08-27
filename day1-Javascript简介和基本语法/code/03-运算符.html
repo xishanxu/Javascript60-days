@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			console.log(10%3); //10对3求余(取模)
+			console.log(3%10); 
+			console.log(9%3);
+			
+			console.log(3 == 5); //false
+			console.log(3 != 5); //true
+			console.log(3 < 5);  //true
+			console.log(5 <= 5); //true
+			console.log(5 > 5);  //false
+			console.log(5 >= 5); //true
+			
+			console.log(5 == "5"); //true  隐式类型转换
+			console.log(5 === "5");//全等,类型相同,值相等
+			
+			//加号具有两义性
+			console.log(2+2);
+			console.log(2+"2"); //字符串的拼接 "22"
+			console.log("3"+"3");
+			console.log(2+3+"4");
+			
+			
+			console.log(3>2 && 3>4); //false
+			console.log(3>2 || 3>4); //true
+			console.log(!3>2); //false
+			
+			var n = 5;
+			//console.log(1<n<10); //错误写法
+			console.log(n>1 && n<10); //1-10之间
+			console.log(n<1 || n>10)  //小于1或者大于10
+			
+		</script>
+	</body>
+</html>

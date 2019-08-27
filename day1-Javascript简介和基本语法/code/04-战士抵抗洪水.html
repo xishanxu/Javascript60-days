@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//为抵抗洪水，战士连续作战89小时，编程计算共多少天零多少小时？
+			var hours = 89;
+			
+			//先把零头的小时数通过求余计算出来
+			var hour = hours % 24;
+			//用hours减去hour,除以24
+			var days = (hours-hour) / 24;
+			
+			console.log("战士们一共奋斗了"+days+"天,"+hour+"小时");
+			
+		</script>
+	</body>
+</html>

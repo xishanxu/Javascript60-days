@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//打印1-50所有偶数,如果遇到9的倍数结束
+			/* var n = 1;
+			while(n <= 50){
+				
+				if(n%2 === 0){
+					console.log(n);
+				}
+				if(n%9 === 0){
+					//终止循环
+					break;
+				}
+				
+				n++;//步进
+			} */
+			
+			//continue  跳出本次循环,继续下一次循环
+			/* var n = 1;
+			while(n <= 50){
+				
+				if(n%9 === 0){
+					//终止循环
+					n++;
+					continue;
+					
+				}
+				
+				
+				if(n%2 === 0){
+					console.log(n);
+				}
+				
+				n++;//步进
+			} */
+			
+			var n = 0;
+			while(n < 50){
+				n++;
+				if(n%9 === 0){
+					//终止循环
+					
+					continue;
+					
+				}
+				
+				
+				if(n%2 === 0){
+					console.log(n);
+				}
+			}
+			
+		</script>
+	</body>
+</html>

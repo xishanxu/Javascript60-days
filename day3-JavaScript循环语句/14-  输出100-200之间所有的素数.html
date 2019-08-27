@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//  输出100-200之间所有的素数
+			for(var num = 3; num <= 100; num++){
+				// 2~parseInt(num/2)
+				for(var i = 2; i <= parseInt(num/2); i++){
+					if(num%i === 0) break;
+				}
+				//i？
+				if(i === parseInt(num/2)+1){
+					//n内存循环正常结束(没有遇见break)
+					//没有一个数能被num整除
+					console.log(num);
+				}
+				//输出素数
+			}
+		</script>
+	</body>
+</html>

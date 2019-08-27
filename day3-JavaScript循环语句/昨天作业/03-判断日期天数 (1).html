@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="date">
+		<button onclick="fn()">计算</button>
+		<script>
+			var input = document.getElementById("date");
+			function fn(){
+				var date = Number(input.value);
+				// 20190220
+				var days = date % 100;
+				var month = parseInt(date/100) % 100;
+				var year = parseInt(date/10000);
+				
+				var day = days;//当前月天数
+				
+				//累加前面月份的总天数
+				switch(month){
+					case 12: day += 30; //11月
+					case 11: day += 31; //10月
+					case 10: day += 30;
+					case 9 : day += 31;
+					case 8 : day += 31;
+					case 7 : day += 30;
+					case 6 : day += 31;
+					case 5 : day += 30;
+					case 4 : day += 31;
+					case 3 :  //判断闰年
+						if(year%4 === 0 && year%100 != 0 || year%400 === 0){
+							day += 29;
+						}else{
+							day += 28;
+						}
+					case 2 : day += 31;
+					case 1 : day += 0;
+						break;
+					
+						
+				}
+				
+				alert(year+"年"+month+"月"+days+"日是这一年的第"+day+"天");
+				
+			}
+		</script>
+	</body>
+</html>
