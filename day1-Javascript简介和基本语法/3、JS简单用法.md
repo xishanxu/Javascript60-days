@@ -127,7 +127,7 @@ var s = Symbol(); //s是独一无二的值
 typeof s ; // symbol　　
 ```
 
-#### VII、 第七种数据类型是 2019新增的 ，BIgInt 类型：可以表示大于 253 的整数。而在Javascript中，[`Number`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number) 基本类型可以精确表示的最大整数是 2^25。**BigInt** 可以表示任意大的整数。 了解一下就行
+#### VII、 第七种数据类型是 2019新增的 ，BIgInt 类型：可以表示大于 2^53 的整数。而在Javascript中，[`Number`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Number) 基本类型可以精确表示的最大整数是 2^25。**BigInt** 可以表示任意大的整数。 了解一下就行
 
 ## （2）、复杂数据类型（引用类型）：
 
