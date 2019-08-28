@@ -76,7 +76,7 @@ test = 10086;
 
 #### 			II、Number 类型：JavaScript 中的数字类型只有 Number 一种，Number 类型采用 IEEE754 标准中的 “双精度浮点数” 来表示一个数字，不区分整数和浮点数 。
 
-#### 			III、Boolean 类型： Boolean 类型只有两个字面值：true 和 false 。 在 JavaScript 中，所有类型的值都可以转化为与 Boolean 等价的值 。
+#### 			III、Boolean 类型： Boolean 类型只有两个字面值：true 和 false 。 在 JavaScript 中，所有类型的值都可以转化为与 Boolean 等价的值。
 
 	#### 			IV、Null 类型：Null 是 Javascript 中特殊的原始数据类型，它只有一个值，即 null，字面意思是：“空值”  。它的语义是，希望**表示一个对象被人为的重置为空对象，而非一个变量最原始的状态 。** 在内存里的表示就是，栈中的变量没有指向堆中的内存对象。当一个对象被赋值了 null 以后，原来的对象在内存中就处于游离状态，GC 会择机回收该对象并释放内存。因此，如果需要释放某个对象，就将变量设置为 null，即表示该对象已经被清空，目前无效状态。null 是原始数据类型 Null 中的唯一一个值，但 typeof 会将 null 误判为 Object 类型 。
 
