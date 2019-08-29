@@ -1,8 +1,10 @@
 # 程序执行结构
 
-## 	1、顺序结构：按照由上到下的顺序一行一行地执行的程序结构
+## 1、顺序结构：按照由上到下的顺序一行一行地执行的程序结构
 
-		## 	2、分支结构：根据不同的条件判断来决定程序执行走向的结构（也叫选择结构）
+	## 	2、分支结构：根据不同的条件判断来决定程序执行走向的结构（也叫选择结构）
+
+### if 语句：
 
 ```javascript
 // if --- 判断逻辑，如果
@@ -55,7 +57,7 @@ if(a = b){
 //一个等号代表赋值操作，结果为等号右边的值
 ```
 
-
+### switch语句：
 
 ```javascript
 // switch  case  多分支语句
@@ -75,7 +77,51 @@ switch(语句){  //语句的结果与每一条case内容进行匹配
 }
 ```
 
+```javascript
+// 利用 case穿透
+switch(i){ 
+    case 25:
+    // 合并两种情形
+    case 35:
+       alert("25 or 35");
+    	 break;
+  	case 50:
+    	 alert(50);
+       break;
+    default:
+    	 alert(0);
+}
+```
 
+```javascript
+// 每一个case值不一定是常量，可以是变量，甚至是表达式
+switch("Hello World"){ 
+    case "Hello" + "World":
+    	 alert("bla bla");
+       break;
+    case "goodbye":
+       alert("25 or 35");
+    	 break;
+  	case 50:
+    	 alert(50);
+       break;
+    default:
+    	 alert(0);
+}
+```
+
+```javascript
+switch(num){ 
+    case num < 0:
+    	 alert("num < 0");
+       break;
+    case num >= 0 && num <= 100:
+       alert("num在0-100之间");
+    	 break;
+    default:
+    	 alert("num > 100");
+}
+```
 
 ## 	3、循环结构：需要重复执行同一操作的程序结构称为循环结构。
 
