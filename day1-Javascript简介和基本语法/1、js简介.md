@@ -4,11 +4,11 @@
 
 ### 2、什么是跨脚本？
 
-	#### 		跨脚本就是说，一套js代码可以在多个平台上运行，比如说 Windows、Linux、Unix、Android、IOS等平台。
+		跨脚本就是说，一套js代码可以在多个平台上运行，比如说 Windows、Linux、Unix、Android、IOS等平台。
 
 ### 3、Javascript的组成部分？
 
-	#### 	（1）ECMAScript，由ECMA-262定义，提供语言的核心功能；
+#### （1）ECMAScript，由ECMA-262定义，提供语言的核心功能；
 
 ####     （2）文档对象模型(DOM)，提供访问和操作网页内容的方法和接口；
 

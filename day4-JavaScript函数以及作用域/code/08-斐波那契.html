@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//feb(0) === 1  feb(1) === 1
+			function feb(n){
+				//求数列的第n项的值
+				if(n === 0 || n === 1){
+					return 1;
+				}else{
+					return feb(n-1) + feb(n-2);
+				}
+				console.log(n)
+			}
+			
+			feb(5)
+// 			feb(4) + feb(3)
+// 			feb(3) + feb(2) + feb(2) + feb(1)
+// 			feb(2) + feb(1) + feb(1) + feb(0) + feb(1) + feb(0) + feb(1)
+// 			feb(1) + feb(0)  + feb(1) + feb(1) + feb(0) + feb(1) + feb(0) + feb(1)
+			
+		</script>
+	</body>
+</html>

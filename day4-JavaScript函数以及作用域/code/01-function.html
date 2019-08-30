@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="fn()"></button>
+		<script>
+			//封装函数(定义函数，声明函数)
+			function fn(){
+				//一段可重复执行的代码
+				alert(123);
+			}
+			
+			//函数调用(函数名+小括号)
+			//fn();
+			
+			var fn1 = function(){
+				alert(456);
+			}
+			fn1();
+			
+			//匿名函数  立即执行函数   自调用函数
+			(function(){
+				alert(789);
+			})();
+			
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//打印三行四列表格
+			function createTable(){
+				var table = "<table>";
+				//拼接tr
+				for(var i = 0; i < 3; i++){
+					table += "<tr>";
+					//拼接td
+					for(var j = 0; j < 4; j++){
+						table += "<td>hello</td>";
+					}
+					table += "</tr>";
+				}
+				table += "</table>";
+				document.write(table);
+			}
+			
+			createTable();
+		</script>
+	</body>
+</html>

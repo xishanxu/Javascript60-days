@@ -59,7 +59,9 @@ document.write("&lt;strong&gt;我很man&lt;/strong&gt;");
 
 ```javascript
 var result;
-// 这行代码我定义了一个名为result的变量，该变量可以用来储存任何值（像这样没有经过初始化的变量，会保存一个特殊的值undefined），JavaScript也支持直接初始化一个变量，如下代码：
+ // 这行代码我定义了一个名为result的变量，
+ // 该变量可以用来储存任何值（像这样没有经过初始化的变量，会保存一个特殊的值undefined），
+ JavaScript也支持直接初始化一个变量，如下代码：
 var message = 10086;
 // 这里变量message保存了一个数字10086
 
@@ -122,7 +124,8 @@ void function fn(){} ; // undefined
 #### VI、第六种基本数据类型是 ES6增加的  Symbol 类型：它的字面意思是：符号、标记。代表独一无二的值 。在 ES6 之前，对象的属性名只能是字符串，这样会导致一个问题，当通过 mixin 模式为对象注入新属性的时候，就可能会和原来的属性名产生冲突 。而在 ES6 中，Symbol 类型也可以作为对象属性名，凡是属性名是 Symbol 类型的，就都是独一无二的，可以保证不会与其他属性名产生冲突。
 
 ```javascript
-// 和其他基本类型不同的是，Symbol 作为基本类型，没有对应的包装类型，也就是说 Symbol 本身不是对象，而是一个函数。因此，在生成 Symbol 类型值的时候，不能使用 new 操作符 。
+和其他基本类型不同的是，Symbol 作为基本类型，没有对应的包装类型，
+也就是说 Symbol 本身不是对象，而是一个函数。因此，在生成 Symbol 类型值的时候，不能使用 new 操作符 。
 var s = Symbol(); //s是独一无二的值
 typeof s ; // symbol　　
 ```

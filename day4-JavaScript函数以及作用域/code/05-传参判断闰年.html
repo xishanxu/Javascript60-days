@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="year1">
+		<input type="text" id="year2">
+		<button onclick="fn1()"></button>
+		<script>
+			//元素id可以在js里直接作为变量使用(但是，别这么用)
+			//console.log(year1);
+			function fn(m,n){
+				for(var year = m; year <= n; year++){
+					if(year%4 === 0 && year%100 != 0 ||year%400 === 0){
+						console.log(year);
+					}
+				}
+			}
+			
+			function fn1(){
+				var year1 = document.getElementById("year1").value;
+				var year2 = document.getElementById("year2").value;
+				fn(year1, year2);
+			}
+			
+		</script>
+	</body>
+</html>

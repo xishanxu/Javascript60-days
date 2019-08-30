@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function jiecheng(n){
+				/* if(n === 1) return 1;
+				else return jiecheng(n-1) * n; */
+				
+				//栈溢出
+				return n === 1 ? 1 : jiecheng(n-1) * n;
+				
+			}
+			console.log(jiecheng(5))
+		</script>
+	</body>
+</html>

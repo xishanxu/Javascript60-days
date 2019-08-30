@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function addAll(){
+				var sum = 0;
+				for(var i = 0; i < arguments.length; i++){
+					sum += arguments[i];
+				}
+				//返回结果,到调用的位置
+				//结束当前函数
+				return sum;
+				alert(2222);
+			}
+			//使用一个全局变量来接受函数的返回值
+			var result = addAll(2,3,4,5);
+			console.log(result);
+			//alert(result);
+		</script>
+	</body>
+</html>

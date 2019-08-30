@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//求1+2!+3!+...+20!的值
+			
+			//算累加和
+			//算阶乘
+			
+			var sum = 0;
+			for(var i = 1; i <= 20; i++){
+				//计算i的阶乘
+				var ji = 1;
+				for(var j = 1; j <= i; j++){
+					ji *= j;
+				}
+				//把阶乘的结果累加给sum
+				sum += ji;
+			}
+			console.log(sum);
+			
+			
+			
+			
+		</script>
+	</body>
+</html>
