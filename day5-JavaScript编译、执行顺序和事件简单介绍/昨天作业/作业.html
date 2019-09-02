@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+	//1、编写一个函数，计算n ~ m之间的闰年（传参实现）
+	
+	function leapYear(n,m){
+		for(var i = n; i <= m; i++){
+			if(i%4 === 0 && i%100 != 0 || i%400 === 0){
+				console.log(i);
+			}
+		}
+	}
+	//leapYear(2000,2020);
+	
+    //2、编写函数计算任意数字的阶乘（两种方法）
+    function jiecheng(n){
+    	
+    	//for
+    	/*
+    	var result = 1;
+    	for(var i = 1; i <=n; i++){
+    		result *= i;
+    	}
+    	return result;
+    	*/
+    	//递归
+    	if(n === 1){
+    		return 1;
+    	}else{
+    		return jiecheng(n-1) * n;
+    	}
+    	//return n === 1 ? 1 : jiecheng(n-1) * n;	
+    }
+    //console.log(jiecheng(4));
+    
+    
+    
+    //3、、编写函数实现：两个数平方的阶乘相加的和
+    	//要求：三个函数实现，一个求阶乘，一个求平方，
+    	//第三个函数利用这两个函数求出最终结果
+    
+    function pow(n){
+    	return n*n;
+    }
+    
+    function fn(a,b){
+		return jiecheng(pow(a)) + jiecheng(pow(b));
+    }
+    
+    //console.log(fn(1,2));
+    
+    
+    
+    //4、如果一个数恰好等于它的因数之和，则称该数为“完全数” perfect number。(包含1不包含本身)
+		//请列出2~10000的所有完全数（要求用两个函数实现），试着写
+	function isPerfect(n){
+		//从1开始,到n-1找到所有因数并相加
+		var sum = 0;
+		for(var i = 1; i < n; i++){
+			//n能不能i被整除
+			if(n%i === 0){
+				sum += i;
+			}
+		}
+		//判断sum和n是否相等
+		/* if(sum === n){
+			return true;
+		}else{
+			return false;
+		} */
+		// return n === sum ? true : false;
+		return n === sum;
+	}
+	//输出a-b中间的左右完全数
+	function fn1(a, b){
+		for(var i = a; i <= b; i++){
+			//判断i是否是完全数
+			if(isPerfect(i)){
+				console.log(i+"是完全数");
+			}
+		}
+	}
+	
+	fn1(2,1000);
+	
+	
+	
+	
+		</script>
+	</body>
+</html>
