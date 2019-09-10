@@ -83,7 +83,7 @@ names[99] = "小旭" // 在位置99上 添加一个名字
 
 ## 	检测数组: 使用 typeof 来检测数组，会告诉你数组是一个"object"，要检测数组，需要用到instanceof或者Array.isArray()
 
-```
+```javascript
 1： value instanceof Array
 instanceof的问题在于，它假定的是只有一个全局环境。
 所以，如果页面中包含多个框架，那就存在两个以上全局的执行环境，从而存在两个以上不同版本的Array构造函数，
@@ -94,7 +94,7 @@ instanceof的问题在于，它假定的是只有一个全局环境。
 
 ## 	转换方法：所有对象都具有toString()、toLocaleString()、valuesOf()
 
-```
+```javascript
 不同类型对象的valueOf()方法的返回值
 对象	返回值
 Array	返回数组对象本身。
