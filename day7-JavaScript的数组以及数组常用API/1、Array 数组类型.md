@@ -107,5 +107,3 @@ String	字符串值。
 Math 和 Error 对象没有 valueOf 方法。
 ```
 
-
-
