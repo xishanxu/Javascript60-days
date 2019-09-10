@@ -92,7 +92,7 @@ instanceof的问题在于，它假定的是只有一个全局环境。
 2:  Array.isArray(value)
 ```
 
-## 	转换方法：所有对象都具有toString()、toLocaleString()、valuesOf()
+## 	转换方法：所有对象都具有toString()、toLocaleString()、valueOf()
 
 ```javascript
 不同类型对象的valueOf()方法的返回值
